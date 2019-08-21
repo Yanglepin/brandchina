@@ -1,0 +1,99 @@
+<!--pages/submitOrder/submitOrder.wxml-->
+<view class="container">
+  <!-- <view class='m-list' bindtap='getSelectAddress'>
+    <view class='list clearfix' style='background: url(/icons/point_sh.png) no-repeat left; background-size:5%;'>
+      <text class='fl'>请选择收货地址</text>
+      <icon class='iconfont icon-youjiantou fr'></icon>
+    </view>
+  </view> -->
+  <view class="nav-address">
+    <view class="{{selected?'active':''}}" bindtap="fahuo">发货</view>
+    <view class="{{selected1?'active':''}}" bindtap="ziti">自提</view>
+  </view>
+  <view class="{{selected?'show':'hidden'}}">
+    <view class="user-address" bindtap='getSelectAddress'>
+      <icon class="iconfont icon-dizhi"></icon>
+      <view class="info">
+        <text>收货人：木子李 <text class="phone">15526326652</text></text>
+        <text>收货地址 : 郑州市二七区升龙中心A座郑州市二七区升龙中心A座</text>
+        <!-- <text>请选择收货地址</text> -->
+      </view>
+      <icon class='iconfont icon-youjiantou'></icon>
+    </view>
+  </view>
+
+  <view class="{{selected1?'show':'hidden'}}">
+    <view class="user-address" bindtap="showStore">
+      <icon class="iconfont icon-dizhi"></icon>
+      <view class="info">
+        <text>取件人：李小韩 <text class="phone">15526326652</text></text>
+        <text>门店地址 : 郑州市二七区升龙中心A座郑州市二七区升龙中心A座</text>
+      </view>
+      <icon class='iconfont icon-youjiantou'></icon>
+    </view>
+  </view>
+
+  <!-- 弹出遮罩层 -->
+  <view class="cover_screen" bindtap="hideStore" wx:if="{{showModalStatus}}"></view> 
+  <view animation="{{animationData}}" class="store_box" wx:if="{{showModalStatus}}">
+    <view class="title"><image src="/icons/cancel.png" bindtap="hideStore"></image>自提门店</view>
+    <view class="store-list" bindtap="hideStore" hover-class="hoverBg">
+      <text>航海路兴华南街生鲜店</text>
+      <text>门店电话：400-800-0000</text>
+      <text>距离：888米</text>
+    </view>
+    <view class="store-list" bindtap="hideStore" hover-class="hoverBg">
+      <text>淮南街政通路生鲜店</text>
+      <text>门店电话：400-800-0000</text>
+      <text>距离：888米</text> 
+    </view>
+    <view class="store-list" bindtap="hideStore" hover-class="hoverBg">
+      <text>航海路未来路生鲜店</text>
+      <text>门店电话：400-800-0000</text>
+      <text>距离：888米</text>
+    </view>
+
+  </view>
+
+  <view class='order-con'>
+    <view class='order-list'>
+      <view class="store-name">
+        <image src='/icons/yun_icon.png'></image>
+        云上郑保旗舰店
+      </view>
+
+      <view class='goods-list'>
+        <view class="order-img">
+          <image src='/icons/goods2.png'></image>
+        </view>
+        <view class="goods-title elli3">农副产品香菇散装香菇干货多规格香菇食用菌调味料 500g</view>
+        <view class="price">
+          <text class="red">￥666</text>
+          <text class="num">×1</text>
+        </view>
+      </view>
+      <view class='goods-list'>
+        <view class="order-img">
+          <image src='/icons/goods2.png'></image>
+        </view>
+        <view class="goods-title elli3">农副产品香菇散装香菇干货多规格香菇食用菌调味料 500g</view>
+        <view class="price">
+          <text class="red">￥666</text>
+          <text class="num">×1</text>
+        </view>
+      </view>
+
+      <view class='total-list'>
+        <view>共1件商品</view>
+        <view class='total'>合计：<text class='red'>￥666</text></view>
+      </view>
+
+    </view>
+    
+  </view>
+  <view style="height:100rpx;background-color:#f4f4f4;"></view>
+  <view class='footer-two'>
+    <view class='left'>合计：<text class='red'>￥666</text></view>
+    <view class='right'>提交订单</view>
+  </view>
+</view>

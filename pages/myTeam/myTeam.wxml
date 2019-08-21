@@ -1,0 +1,29 @@
+<!--pages/myTeam/myTeam.wxml-->
+<view class="container">
+  <view class='top'>
+    <view class='box'>
+      <view>累计邀请好友(人)</view>
+      <view class='num'>1</view>
+    </view>
+  </view>
+  <view class='team-list'>
+    <view class='img-box'>
+      <image src='/icons/user.png'></image>
+    </view>
+    <view class='m-detail'>
+      <text class='name'>李好好</text>
+      <text class='date'>2019-01-02 20:21:32</text>
+    </view>
+    <view class='money green'>共消费500元</view>
+  </view>
+  <view class='team-list'>
+    <view class='img-box'>
+      <image src='/icons/user.png'></image>
+    </view>
+    <view class='m-detail'>
+      <text class='name'>李好好</text>
+      <text class='date'>2019-01-02 20:21:32</text>
+    </view>
+    <view class='money green'>共消费500元</view>
+  </view>
+</view>

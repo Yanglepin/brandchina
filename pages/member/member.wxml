@@ -1,0 +1,62 @@
+<!--pages/member/member.wxml-->
+<view class="container">
+  <view class='userinfo' style='background: url(/icons/member_bg.png) no-repeat center;background-size:100%;'>
+    <view class='user'>
+      <image src='/icons/user.png'></image>
+      <!-- <icon><open-data type="userAvatarUrl"></open-data></icon> -->
+      <view>撒哈拉</view>
+      <!-- <open-data type="userNickName" lang="zh_CN" style="color: #fff;"></open-data>   -->
+      <!-- <view class='hy' bindtap='getMember'>会员中心</view> -->
+    </view>
+  </view>
+  <view class='yu-list'>
+    <view class='list-box' bindtap='getIntegral'>
+      <text class='green'>0</text>
+      <text>积分</text>
+    </view>
+    <view class='list-box' bindtap='getMoney'>
+      <text class='green'>0</text>
+      <text>佣金</text>
+    </view>
+    <view class='list-box' bindtap='getBalance'>
+      <text class='green'>0</text>
+      <text>余额</text>
+    </view>
+  </view>
+  <view class='m-list'>
+    <view class='list clearfix' bindtap='getMyorder'>
+      <icon class='iconfont icon-dingdan fl'></icon>
+      <text class='fl'>我的订单</text>
+      <!-- <text class='iconfont icon-dingdan' class='fr'></text> -->
+      <icon class='iconfont icon-youjiantou fr'></icon>
+    </view>
+    <view class='list clearfix'bindtap='getShoppingCart'>
+      <icon class='iconfont icon-gouwuche fl'></icon>
+      <text class='fl'>我的购物车</text>
+      <icon class='iconfont icon-youjiantou fr'></icon>
+    </view>
+    <view class='list clearfix list1' style='background: url(/icons/m3.png) no-repeat left; background-size:5%;' bindtap='getTotalSum'>
+      <text class='fl'>消费总额</text>
+      <icon class='iconfont icon-youjiantou fr'></icon>
+    </view>
+    <view class='list clearfix' bindtap='getMyTeam'>
+      <icon class='iconfont icon-tuandui_keshi fl'></icon>
+      <text class='fl'>我的团队</text>
+      <icon class='iconfont icon-youjiantou fr'></icon>
+    </view>
+    <view class='list clearfix list1' style='background: url(/icons/m5.png) no-repeat left; background-size:6%;' bindtap='getInfoUpdate'>
+      <text class='fl'>修改资料</text>
+      <icon class='iconfont icon-youjiantou fr'></icon>
+    </view>
+    <view class='list clearfix' bindtap='getAddressList'>
+      <icon class='iconfont icon-dizhi fl'></icon>
+      <text class='fl'>收货地址</text>
+      <icon class='iconfont icon-youjiantou fr'></icon>
+    </view>
+    <view class='list clearfix' bindtap='getNotice'>
+     <icon class='iconfont icon-gonggaotongzhi fl' style='font-size: 36rpx;'></icon>
+      <text class='fl' style="padding-left: 11.5%;">公告</text>
+      <icon class='iconfont icon-youjiantou fr'></icon>
+    </view>
+  </view>
+</view>

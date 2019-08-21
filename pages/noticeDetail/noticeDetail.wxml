@@ -1,0 +1,14 @@
+<!--pages/noticeDetail/noticeDetail.wxml-->
+<view class="container">
+  <view class='details'>
+    吃米和吃面的区别，到底有什么不一样？是时候告诉你真相
+    俗话说：疾病都是吃出来的
+    身体好不好？长寿还是折寿？
+    与日常饮食密不可分
+    很多我们日常熟悉的常见食物
+    营养性大不同
+    你可千万别吃错啦~
+    <image src='/icons/area_adv.png'></image>
+  </view>
+</view>
+

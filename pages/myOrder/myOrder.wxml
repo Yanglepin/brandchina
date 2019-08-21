@@ -1,0 +1,145 @@
+<!--pages/myOrder/myOrder.wxml-->
+<view class="container">
+  <view class="swiper-tab">
+    <scroll-view class="image-group" scroll-x="true">
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">未付款</view>
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">待发货</view>
+      <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">待收货</view>
+      <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">已完成</view>
+    </scroll-view>
+  </view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+    <!-- 未付款 -->
+    <swiper-item class="swiper-items">
+      <scroll-view scroll-y="true" class='scroll-views'>
+        <view class='order-con'>
+          <view class='order-list'>
+            <view class="store-name clearfix">
+              <image src='/icons/yun_icon.png'></image>
+              云上郑保旗舰店
+              <text class='green fr'>等待买家付款</text>
+            </view>
+            <view class='goods-list'> 
+              <view class="order-img">
+                <image src='/icons/goods2.png'></image>
+              </view>
+              <view class="goods-title elli3">农副产品香菇散装香菇干货多规格香菇食用菌调味料 500g</view>
+              <view class="price">
+                <text class="red">￥666</text>
+                <text class="num">×1</text>
+              </view>
+            </view>
+            <view class='total-list'>
+              <view>共1件商品</view>
+              <view class='total'>合计：
+                <text class='red'>￥666</text>
+              </view>
+            </view>
+            <view class='btn-bom clearfix'>
+              <text class='green-btn fr'>付款</text>
+              <text class="gray-btn fr">取消订单</text>
+            </view>
+          </view>
+        </view>
+        
+      </scroll-view>
+    </swiper-item>
+    <!-- 待发货 -->
+    <swiper-item class="swiper-items">
+      <scroll-view scroll-y="true" class='scroll-views'>
+        <view class='order-con'>
+          <view class='order-list'>
+            <view class="store-name clearfix">
+              <image src='/icons/yun_icon.png'></image>
+              云上郑保旗舰店
+              <text class='green fr'>买家已付款</text>
+            </view>
+            <view class='goods-list'>
+              <view class="order-img">
+                <image src='/icons/goods2.png'></image>
+              </view>
+              <view class="goods-title elli3">农副产品香菇散装香菇干货多规格香菇食用菌调味料 500g</view>
+              <view class="price">
+                <text class="red">￥666</text>
+                <text class="num">×1</text>
+              </view>
+            </view>
+            <view class='total-list'>
+              <view>共1件商品</view>
+              <view class='total'>合计：
+                <text class='red'>￥666</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 待收货 -->
+    <swiper-item class="swiper-items">
+      <scroll-view scroll-y="true" class='scroll-views'>
+        <view class='order-con'>
+          <view class='order-list'>
+            <view class="store-name clearfix">
+              <image src='/icons/yun_icon.png'></image>
+              云上郑保旗舰店
+              <text class='green fr'>卖家已发货</text>
+            </view>
+            <view class='goods-list'>
+              <view class="order-img">
+                <image src='/icons/goods4.png'></image>
+              </view>
+              <view class="goods-title elli3">农副产品香菇散装香菇干货多规格香菇食用菌调味料 500g</view>
+              <view class="price">
+                <text class="red">￥666</text>
+                <text class="num">×1</text>
+              </view>
+            </view>
+            <view class='total-list'>
+              <view>共1件商品</view>
+              <view class='total'>合计：
+                <text class='red'>￥666</text>
+              </view>
+            </view>
+            <view class='btn-bom clearfix'>
+              <text class='green-btn fr'>确认收货</text>
+              <text class="gray-btn fr">查看物流</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 已完成 -->
+    <swiper-item class="swiper-items">
+      <scroll-view scroll-y="true" class='scroll-views'>
+        <view class='order-con'>
+          <view class='order-list'>
+            <view class="store-name clearfix">
+              <image src='/icons/yun_icon.png'></image>
+              云上郑保旗舰店
+              <text class='green fr'>交易成功</text>
+            </view>
+            <view class='goods-list'>
+              <view class="order-img">
+                <image src='/icons/goods2.png'></image>
+              </view>
+              <view class="goods-title elli3">农副产品香菇散装香菇干货多规格香菇食用菌调味料 500g</view>
+              <view class="price">
+                <text class="red">￥666</text>
+                <text class="num">×1</text>
+              </view>
+            </view>
+            <view class='total-list'>
+              <view>共1件商品</view>
+              <view class='total'>合计：
+                <text class='red'>￥666</text>
+              </view>
+            </view>
+            <view class='btn-bom clearfix'>
+              <text class="gray-btn fr">删除订单</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

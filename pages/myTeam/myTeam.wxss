@@ -1,0 +1,68 @@
+/* pages/myTeam/myTeam.wxss */
+page{
+  background-color: #f4f4f4;
+}
+.container{
+  background-color: #fff;
+}
+.top{
+  width: 100%;
+}
+.top .box{
+  width: 80%;
+  height: 180rpx;
+  margin: 6% 10% 0% 10%;
+  background-color: #62ab00;
+  border-top-right-radius: 10rpx;
+  border-top-left-radius: 10rpx;
+}
+.top .box view{
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  font-size: 26rpx;
+  text-align: center;
+}
+.top .box view:first-child{
+  line-height: 110rpx;
+}
+.top .box view.num{
+  font-size: 30rpx;
+}
+.team-list{
+  width: 100%;
+  height: 120rpx;
+  padding: 0% 4%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1rpx solid #f4f4f4;
+  box-sizing: border-box;
+}
+.team-list .img-box{
+  width: 15%;
+}
+.team-list .img-box image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.team-list .m-detail{
+  width: 65%;
+}
+.team-list .m-detail text{
+  display: block;
+  line-height: 40rpx;
+}
+.team-list .m-detail text.date{
+  color: #898989;
+  font-size: 20rpx;
+}
+.team-list .m-detail text.name{
+  color: #212121;
+  font-size: 26rpx;
+}
+.team-list .money{
+  width: 20%;
+  font-size: 22rpx;
+}

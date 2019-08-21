@@ -1,0 +1,4 @@
+/* pages/agricultural/agricultural.wxss */
+swiper-item{
+  background-color: #fafafa;
+}

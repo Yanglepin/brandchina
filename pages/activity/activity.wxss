@@ -1,0 +1,5 @@
+/* pages/activity/activity.wxss */
+
+.tuijian-list .box .title-js{
+  height: 50rpx;
+}

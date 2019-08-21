@@ -1,0 +1,20 @@
+<!--pages/recharge/recharge.wxml-->
+<view class="container">
+  <view class='ye-list'>
+    <text class='ye-text'>余额:</text>
+    <text class='green'>￥0.00</text>
+  </view>
+  <view class='box'>
+    <view>选择充值金额</view>
+    <block wx:for="{{select}}" wx:for-index="index" wx:key="*this">
+      <text data-key="{{index}}" data-value="{{item}}" bindtap='choose' class="{{isChecked==index ? 'act':''}}">{{item}}元</text>
+    </block>
+    <!-- <text class='act'>100元</text>
+    <text>500元</text>
+    <text>700元</text>
+    <text>1000元</text> -->
+  </view>
+  <view class='btn'>
+    <button type='button'>充值</button>
+  </view>
+</view>

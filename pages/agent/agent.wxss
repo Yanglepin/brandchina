@@ -1,0 +1,6 @@
+/* pages/agent/agent.wxss */
+.gray{
+  font-size: 24rpx;
+  color: #b6b6b6;
+  text-decoration: line-through;
+}

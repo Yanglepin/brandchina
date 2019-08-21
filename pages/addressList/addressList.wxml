@@ -1,0 +1,35 @@
+<!--pages/addressList/addressList.wxml-->
+<view class="container">
+  <view class='address-box' wx:for="{{addressList}}"  wx:for-index="index" wx:key="*">
+    <view class='address-detail'>
+      <view class='top'>
+        <text>{{item.name}}</text>
+        <text>{{item.phone}}</text>
+      </view>
+      <view class='bom'>
+      {{item.address}}
+      </view> 
+    </view>
+    <view class='address-edit'>
+      <view class='left'>
+        <label catchtap='checkedTap' data-index="{{index}}">
+          <radio value='{{item.isCheck}}' checked="{{item.isCheck}}">默认地址</radio>
+        </label>
+      </view>
+      <view class='right'>
+        <view class='edit' bindtap='getEditAddress'>
+          <icon class='iconfont icon-list-bianji'></icon> 
+          <text>编辑</text>
+        </view>
+        <view class='delete'>
+          <icon class='iconfont .icon-shanchu'></icon>删除
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view style="height:150rpx;"></view>
+  <view class='btn'>
+    <button type='button' bindtap='getAddAddress'>添加新地址 </button>
+  </view>
+</view>

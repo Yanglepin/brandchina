@@ -1,0 +1,84 @@
+<!--pages/news/news.wxml-->
+<view class="container">
+  <view class="swiper-tab">
+    <scroll-view class="image-group" scroll-x="true">
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">咨询类</view>
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">搞笑类</view>
+      <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">经济类</view>
+      <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">农业类</view>
+      <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">财经类</view>
+      <view class="swiper-tab-list {{currentTab==5 ? 'on' : ''}}" data-current="5" bindtap="swichNav">军事类</view>
+    </scroll-view>
+  </view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+    <swiper-item class="swiper-items">
+      <scroll-view scroll-y="true" class='scroll-views'>
+        <view class='news-list'>
+          <view class='title' bindtap='getDetails'>“新华书店”顾客只看不买，冬夏暖气照明供应，为啥却没有 破产？</view>
+          <view class='box-img'>
+            <image src='/icons/news1.png'></image>
+          </view>
+        </view>
+        <view class='news-list'>
+          <view class='title' bindtap='getDetails'>“新华书店”顾客只看不买，冬夏暖气照明供应，为啥却没有 破产？</view>
+          <view class='video-box'>
+            <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls></video>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item class="swiper-items">
+      <scroll-view scroll-y="true" class='scroll-views'>
+        <view class='news-list' bindtap='getDetails'>
+          <view class='title'>“新华书店”顾客只看不买，冬夏暖气照明供应，为啥却没有 破产？</view>
+          <view class='box-img'>
+            <image src='/icons/news1.png'></image>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item class="swiper-items">
+      <scroll-view scroll-y="true" class='scroll-views'>
+        <view class='news-list' bindtap='getDetails'>
+          <view class='title'>“新华书店”顾客只看不买，冬夏暖气照明供应，为啥却没有 破产？</view>
+          <view class='box-img'>
+            <image src='/icons/news1.png'></image>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item class="swiper-items">
+      <scroll-view scroll-y="true" class='scroll-views'>
+        <view class='news-list' bindtap='getDetails'>
+          <view class='title'>“新华书店”顾客只看不买，冬夏暖气照明供应，为啥却没有 破产？</view>
+          <view class='box-img'>
+            <image src='/icons/news1.png'></image>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item class="swiper-items">
+      <scroll-view scroll-y="true" class='scroll-views'>
+        <view class='news-list' bindtap='getDetails'>
+          <view class='title'>“新华书店”顾客只看不买，冬夏暖气照明供应，为啥却没有 破产？</view>
+          <view class='box-img'>
+            <image src='/icons/news1.png'></image>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item class="swiper-items">
+      <scroll-view scroll-y="true" class='scroll-views'>
+        <view class='news-list' bindtap='getDetails'>
+          <view class='title'>“新华书店”</view>
+          <view class='box-img'>
+            <image src='/icons/news1.png'></image>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+  </swiper>
+</view>

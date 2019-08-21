@@ -1,0 +1,51 @@
+/* pages/myOrder/myOrder.wxss */
+swiper-item{
+  background-color: #f7f7f7;
+}
+.swiper-tab-list {
+  width: 25%;
+}
+.swiper-tab{
+  border-bottom: 1rpx solid #eeeeee;
+  box-sizing: border-box;
+}
+.order-con{
+  background-color: #fff;
+  border-bottom: 1rpx solid #eeeeee;
+  box-sizing: border-box;
+}
+.order-con .order-list .store-name{
+  border-bottom: 1rpx solid #f7f7f7;
+  box-sizing: border-box;
+}
+.btn-bom{
+  width: 100%; 
+  padding: 2% 0%;
+  border-top: 1rpx solid #f7f7f7;
+  box-sizing: border-box;
+}
+.btn-bom text{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  width: 130rpx;
+  height: 50rpx;
+  box-sizing: border-box;
+}
+.btn-bom text.green-btn{
+  color: #62ab00;
+  border: 1rpx solid #62ab00;
+  border-radius: 30rpx;
+}
+.btn-bom text.gray-btn{
+  color: #8d8d8c;
+  border: 1rpx solid #8d8d8c;
+  border-radius: 30rpx;
+  margin-right: 3%; 
+}
+.store-name .green{
+  font-size: 26rpx;
+  display: inline-block;
+}

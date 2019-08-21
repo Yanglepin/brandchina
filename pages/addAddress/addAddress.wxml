@@ -1,0 +1,29 @@
+<!--pages/addAddress/addAddress.wxml-->
+<view class="container">
+  <view class='address-box'>
+    <view class='list clearfix'>
+      <text class='fl'>姓名</text>
+      <input type='text' placeholder='最少两个字，最多八个字' class='fl'></input>
+    </view>
+    <view class='list clearfix'>
+      <text class='fl'>电话</text>
+      <input type='number' placeholder='请输入手机号' class='fl'></input>
+    </view>
+    <view class='list clearfix'>
+      <text class='fl'>地区</text>
+         <picker class="fl" mode="multiSelector" 
+        bindchange="func_changeCitysChange"  
+        bindcolumnchange="func_changeCitysChangeColumn" value="{{ citysIndex }}" range="{{ cityArray }}">
+          <input type='text' placeholder='请选择' class='fl' disabled='disabled' value="{{area}}" bindinput='getArea'></input>
+        </picker>
+      <icon class='iconfont icon-youjiantou'></icon>
+    </view> 
+    <view class='list clearfix'>
+      <text class='fl'>详细地址</text>
+      <input type='text' placeholder='请填写' class='fl'></input>
+    </view>
+  </view>
+   <view class='btn'>
+    <button type='button' bindtap='getSave'>保存</button>
+  </view>
+</view>

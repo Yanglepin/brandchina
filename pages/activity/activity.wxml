@@ -1,0 +1,26 @@
+<!--pages/activity/activity.wxml-->
+<view class="container">
+        <view class='tuijian-list clearfix'>
+          <view class='box fl' bindtap='getDetails'>
+            <view class='box-img'>
+              <image src='/icons/nf1.png'></image>
+            </view>
+            <view class='title elli3'>大菜园 荔浦芋头 广西新鲜蔬菜 紫藤香芋 毛芋头槟榔芋</view>
+            <view class='price'>2000积分</view>
+          </view>
+          <view class='box fl' bindtap='getDetails'>
+            <view class='box-img'>
+              <image src='/icons/goods2.png'></image>
+            </view>
+            <view class='title elli3'>鲜烹烹 竹荪干货 100g 竹笙菌菇农产品 竹荪菌 古田长裙竹荪食用菌特产古田长裙竹荪食用菌特产古田长裙竹荪食用菌特产</view>
+            <view class='price'>2000积分</view>
+          </view>
+          <view class='box fl' bindtap='getDetails'>
+            <view class='box-img'>
+              <image src='/icons/goods4.png'></image>
+            </view>
+            <view class='title elli3'>鲜烹烹 竹荪干货 100g 竹笙菌菇农产品 竹荪菌 古田长裙竹荪食用菌特产古田长裙竹荪食用菌特产古田长裙竹荪食用菌特产</view>
+            <view class='price'>2000积分</view>
+          </view>
+        </view>
+</view>

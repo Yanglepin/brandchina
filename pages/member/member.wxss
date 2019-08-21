@@ -1,0 +1,32 @@
+/* pages/member/member.wxss */
+.user view.hy{
+  font-size: 22rpx;
+  color: #62ab00;
+  background-color: #fff;
+  border-radius: 20rpx;
+  width: 110rpx;
+  height: 40rpx;  
+  line-height: 40rpx;
+}
+.yu-list{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 8rpx solid #f9f9f9;
+  box-sizing: border-box;
+}
+.yu-list .list-box{
+  margin: 15rpx 0;
+}
+.yu-list .list-box text{
+  display: block;
+  text-align: center;
+  color: #2a2a2a;
+  font-size: 28rpx;
+}
+.yu-list .list-box text.green{
+  font-size: 26rpx;
+}

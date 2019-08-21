@@ -1,0 +1,22 @@
+<!--pages/agent/agent.wxml-->
+<view class="container">
+  <view class='tuijian-list clearfix'>
+    <view class='box fl'>
+      <view class='box-img'>
+        <image src='/icons/nf2.png'></image>
+      </view>
+      <view class='title elli3'>大菜园 荔浦芋头 广西新鲜蔬菜 紫藤香芋 毛芋头槟榔芋</view>
+      <text class='price'>￥38.80</text>
+      <text class='gray'>￥38.80</text>
+    </view>
+    <view class='box fl'>
+      <view class='box-img'>
+        <image src='/icons/nf2.png'></image>
+      </view>
+      <view class='title elli3'>大菜园 荔浦芋头 广西新鲜蔬菜 紫藤香芋 毛芋头槟榔芋</view>
+      <text class='price'>￥38.80</text>
+      <text class='gray'>￥38.80</text>
+    </view>
+    
+  </view>
+</view>

@@ -1,0 +1,77 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/goodsDetails/goodsDetails",
+    "pages/activity/activity",
+    "pages/shoppingCart/shoppingCart",
+    "pages/member/member",
+    "pages/money/money",
+    "pages/news/news",
+    "pages/addressList/addressList",
+    "pages/addAddress/addAddress",
+    "pages/infoUpdate/infoUpdate",
+    "pages/myTeam/myTeam",
+    "pages/notice/notice",
+    "pages/totalSum/totalSum",
+    "pages/myOrder/myOrder",
+    "pages/recharge/recharge",
+    "pages/withdrawal/withdrawal",
+    "pages/withdrawalList/withdrawalList",
+    "pages/balance/balance",
+    "pages/integral/integral",
+    "pages/details/details",
+    "pages/member1/member1",
+    "pages/submitOrder/submitOrder",
+    "pages/agricultural/agricultural",
+    "pages/shareIntegral/shareIntegral",
+    "pages/industry/industry",
+    "pages/service/service",
+    "pages/noticeDetail/noticeDetail",
+    "pages/agent/agent",
+    "pages/activityArea/activityArea"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "品牌中国商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#a3a3a3",
+    "selectedColor": "#62ab00",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "商城",
+        "iconPath": "icons/tb1.png",
+        "selectedIconPath": "icons/tb1_green.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯 ",
+        "iconPath": "icons/tb2.png",
+        "selectedIconPath": "icons/tb2_green.png"
+      },
+      {
+        "pagePath": "pages/shareIntegral/shareIntegral",
+        "text": "分享积分",
+        "iconPath": "icons/tb3.png",
+        "selectedIconPath": "icons/tb3_green.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "我的",
+        "iconPath": "icons/tb4.png",
+        "selectedIconPath": "icons/tb4_green.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "品牌中国商城需要您的定位信息" 
+    }
+  }
+}

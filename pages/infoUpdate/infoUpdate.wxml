@@ -1,0 +1,22 @@
+<!--pages/infoUpdate/infoUpdate.wxml-->
+<view class="container">
+  <view class='info-list claerfix' bindtap='uploadImg'>
+    <view class='fl'>头像</view>
+    <!-- <image src='/icons/arrows-right.png' class='fr arrows'></image> -->
+    <icon class="iconfont icon-youjiantou fr"></icon>
+    <view class='user-box fr' wx:if="{{img}}">
+      <image src='{{img}}' class='user fr'></image>
+    </view>
+    <view class='user-box fr' wx:else>
+      <icon><open-data type="userAvatarUrl"></open-data></icon>
+    </view>
+  </view>
+  <view class='info-list claerfix'>
+    <view class='fl'>昵称</view>
+   <icon class='iconfont icon-youjiantou fr'></icon>
+    <input type='text' value='阿云嘎' class='fr'></input>
+  </view>
+  <view class='btn'>
+    <button type='button'>确认</button>
+  </view>
+</view>

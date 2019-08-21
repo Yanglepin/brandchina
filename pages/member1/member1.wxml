@@ -1,0 +1,55 @@
+<!--pages/member1/member1.wxml-->
+<view class="container">
+  <view class='userinfo' style='background: url(/icons/hy_bg.png) no-repeat center; background-size:100%;'>
+    <view class='user'>
+      <image src='/icons/user.png'></image>
+      <view>撒哈拉</view>
+    </view>
+  </view>
+  <view class='power clearfix'>
+    <view class='title'>特权</view>
+    <view class='list fl'>
+      <image src='/icons/hy_icon1.png'></image>
+      <text>身份标识</text>
+    </view>
+    <view class='list fl' bindtap='getIntegral'>
+      <image src='/icons/hy_icon2.png'></image>
+      <text>积分</text>
+    </view>
+    <view class='list fl' bindtap='getMoney'>
+      <image src='/icons/hy_icon3.png'></image>
+      <text>佣金</text>
+    </view>
+  </view>
+  <view class='power-list'>
+    <view class='img-box'>
+      <image src='/icons/hy_icong1.png'></image>
+    </view>
+    <view class='power-txt'>
+      <text>会员</text>
+      <text>累计消费2000元可成为零售商</text>
+      <text>累计消费6000元可成为代理商</text>
+    </view>
+    <view class='btn' bindtap='getTotalSum'>查看消费总额</view>
+  </view>
+  <view class='power-list'>
+    <view class='img-box'>
+      <image src='/icons/hy_icong2.png'></image>
+    </view>
+    <view class='power-txt'>
+      <text>零售商</text>
+      <text>享受一级收益</text>
+    </view>
+    <view class='btn' bindtap='getActivity'>成为零售商</view>
+  </view>
+  <view class='power-list'>
+    <view class='img-box'>
+      <image src='/icons/hy_icong3.png'></image>
+    </view>
+    <view class='power-txt'>
+      <text>代理商</text>
+      <text>享受二级收益</text>
+    </view>
+    <view class='btn' bindtap='getAgent'>成为代理商</view>
+  </view>
+</view>

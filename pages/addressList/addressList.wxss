@@ -1,0 +1,110 @@
+/* pages/addressList/addressList.wxss */
+page{
+  background-color: #fafafa;
+}
+.container{
+  background-color: #fff;
+}
+.address-box{
+  width: 100%;
+  border-bottom: 1rpx solid #f4f4f4;
+  box-sizing: border-box;
+}
+.address-box .address-detail{
+  width: 92%;
+  margin: 0 4%;
+  border-bottom: 1rpx solid #fafafa;
+  box-sizing: border-box;
+}
+.address-box .address-detail .top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80rpx; 
+  line-height: 80rpx;
+}
+.address-box .address-detail .top text{
+  display: inline-block;
+  color: #252525;
+  font-size: 26rpx;
+}
+.address-box .address-detail .bom{
+  color: #2c2c2c;
+  font-size: 24rpx;
+  line-height: 30rpx;
+  padding-bottom: 20rpx;
+}
+.address-edit{
+  width: 92%;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 0% 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.address-edit .right{
+  width: 37%;
+  display: flex;
+  flex-direction: row;
+}
+.address-edit .right .delete{
+  margin-left: 15%;
+}
+.address-edit .right .delete icon{
+  font-size: 50rpx;
+}
+.address-edit view{
+  height: 90rpx;
+  color: #2c2c2c;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.address-edit view icon{
+  color: #888;
+  margin-right:10rpx;
+}
+.btn{
+  width: 100%;
+  background-color: #fafafa;
+  position: fixed;
+  bottom: 0%;
+  height: 150rpx;
+}
+button{
+  width: 85%;
+  color: #fff;
+  font-size: 34rpx;
+  background-color: #62ab00;
+  border: none;
+}
+radio .wx-radio-input{ 
+  /* 自定义样式.... */
+    height: 38rpx; 
+    width: 38rpx;
+    margin-top: -4rpx;
+    border-radius: 2rpx;
+    border: 1rpx solid #858585;
+    background: transparent;
+ }
+ 
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked{
+   border: 1rpx solid #62ab00;
+   background: #62ab00;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: #62ab00;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}

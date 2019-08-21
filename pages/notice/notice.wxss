@@ -1,0 +1,25 @@
+/* pages/notice/notice.wxss */
+page{
+  background-color: #f4f4f4;
+}
+.notice-list{
+  width: 100%;
+  padding: 0% 4%;
+  background-color: #fff;
+  border-bottom: 1rpx solid #f4f4f4;
+  box-sizing: border-box;
+}
+.notice-list .title{
+  width: 100%;
+  height: 70rpx;
+  line-height: 90rpx;
+  color: #313131;
+  font-size: 26rpx;
+}
+.notice-list .date{
+  width: 100%;
+  line-height: 50rpx;
+  text-align: right;
+  font-size: 24rpx;
+  color: #ababab;
+}

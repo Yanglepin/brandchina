@@ -1,0 +1,55 @@
+/* pages/addAddress/addAddress.wxss */
+page{
+  background-color: #fafafa;
+}
+.container{
+  background-color: #fff;
+}
+.address-box{
+  width: 100%;
+}
+.address-box .list{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #fafafa;
+  box-sizing: border-box;
+  padding: 0% 4%;
+}
+.address-box .list text{
+  display: inline-block;
+  font-size: 26rpx;
+  color: #252525;
+}
+.address-box .list input{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 24rpx;
+  color: #252525;
+  margin-left: 10%;
+}
+.address-box .list picker{
+  width: 80%;
+  margin-left: 3%;
+}
+.address-box .list picker input{
+  width: 100%;
+}
+.address-box .list image{
+  width: 15rpx;
+  height: 25rpx;
+  margin-top: 5%;
+}
+.btn{
+  width: 100%;
+  background-color: #fafafa;
+  position: fixed;
+  bottom: 2%;
+}
+button{
+  width: 85%;
+  color: #fff;
+  font-size: 34rpx;
+  background-color: #62ab00;
+  border: none;
+}

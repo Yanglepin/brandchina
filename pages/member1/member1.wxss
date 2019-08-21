@@ -1,0 +1,84 @@
+/* pages/member1/member1.wxss */
+page{
+  background-color: #fafafa;
+}
+.user{
+  padding:5% 0%;
+}
+.power{
+  width: 100%;
+  border-bottom: 10rpx solid #fafafa;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.power .title{
+  width: 92%;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #383838;
+  font-size: 28rpx;
+  margin: 0 4%;
+  border-bottom: 1rpx solid #f4f4f4;
+  box-sizing: border-box;
+}
+.power .list{
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3% 0%;
+}
+.power .list image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.power .list text{
+  font-size: 26rpx;
+  color: #333333;
+  display: block;
+  text-align: center;
+  margin-top: 10rpx;
+}
+.power-list{
+  width: 100%;
+  padding: 4%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #fafafa;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.power-list .img-box{
+  width: 20%;
+}
+.power-list .img-box image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.power-list .power-txt{
+  width: 57%;
+}
+.power-list .power-txt text:first-child{
+  color: #2a2a2a;
+  font-size: 28rpx;
+}
+.power-list .power-txt text{
+  line-height: 40rpx;
+  display: block;
+  color: #939393;
+  font-size: 24rpx;
+}
+.power-list .btn{
+  width: 28%;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #62ab00;
+  font-size: 24rpx;
+  text-align: center;
+  border: 1rpx solid #62ab00;
+  border-radius: 30rpx;
+  box-sizing: border-box;
+}

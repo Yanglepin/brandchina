@@ -1,0 +1,8 @@
+/* pages/details/details.wxss */
+.details{
+  width: 94%;
+  margin: 3%;
+}
+.details image{
+  width: 100%;
+}

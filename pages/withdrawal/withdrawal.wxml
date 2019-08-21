@@ -1,0 +1,33 @@
+<!--pages/withdrawal/withdrawal.wxml-->
+<view class="container">
+  <view class='header'>
+    <text class='title'>提现</text>
+    <text class="icon-right green" bindtap='getWithdrawalList'>提现记录</text>
+  </view>
+  <view class='top'>
+    <view class='left'>提现至:</view>
+    <view class='right'>
+    <icon class='iconfont icon-weixin'></icon>
+    微信
+    </view>
+  </view>
+  <view>
+    <view class='input-title'>可提现金额：100元</view>
+    <view class='input-list'> 
+      <text class='money-icon'>¥</text>
+      <input type='number' placeholder='请输入提现金额' placeholder-class="place-holder"></input>
+    </view>
+    <view class='bom-list'>
+      <text>提现费用：</text>
+      <text>20元</text>
+    </view>
+    <view class='bom-list'>
+      <text>预计到账时间：</text>
+      <text>24小时到账</text>
+    </view>
+  </view>
+  <view class='btn'>
+    <button type='button'>提现</button>
+  </view>
+  
+</view>

@@ -1,0 +1,62 @@
+/* pages/shareIntegral/shareIntegral.wxss */
+page{
+  background-color: #f9edd5;
+}
+.share-bg{
+  width: 100%;
+}
+.share-bg image{
+  width: 100%;
+  display: block;
+}
+.share-bom{
+  width: 100%;
+}
+.point-list{
+  width: 94%;
+  margin: 0 3%;
+  border: 3rpx solid #5ba642;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+.point-list .list-box{
+  margin: 15rpx 0;
+}
+.point-list .list-box text{
+  display: block;
+  text-align: center;
+  color: #333;
+  font-size: 28rpx;
+}
+.point-list .list-box text.green{
+  font-size: 24rpx;
+}
+.rules-title{
+  width: 94%;
+  font-size: 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 0 3%;
+}
+.rules-content{
+  width: 94%;
+  margin: 0 3%;
+  font-size: 26rpx;
+  color: #484848;
+  line-height: 45rpx;
+}
+button{
+  width: 80%;
+  margin: 4% 10%;
+  background-color: #62ab00;
+  color: #fff;
+  font-size: 30rpx;
+}
+button.exchange{
+  background-color: #ab8500;
+}

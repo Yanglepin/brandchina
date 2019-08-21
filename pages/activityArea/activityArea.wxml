@@ -1,0 +1,53 @@
+<!--pages/activityArea/activityArea.wxml-->
+<view class="container">
+  <view class="swiper-tab">
+    <scroll-view class="image-group" scroll-x="true">
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">积分兑换</view>
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">今日特价</view>
+    </scroll-view>
+  </view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+    <swiper-item class="swiper-items">
+      <scroll-view scroll-y="true" class='scroll-views'>
+        <view class='tuijian-list clearfix'>
+          <view class='box fl' bindtap='getDetails'>
+            <view class='box-img'>
+              <image src='/icons/nf1.png'></image>
+            </view>
+            <view class='title elli3'>大菜园 荔浦芋头 广西新鲜蔬菜 紫藤香芋 毛芋头槟榔芋</view>
+            <view class='price'>1000积分</view>
+          </view>
+          <view class='box fl' bindtap='getDetails'>
+            <view class='box-img'>
+              <image src='/icons/goods2.png'></image>
+            </view>
+            <view class='title elli3'>鲜烹烹 竹荪干货 100g 竹笙菌菇农产品 竹荪菌 古田长裙竹荪食用菌特产古田长裙竹荪食用菌特产古田长裙竹荪食用菌特产</view>
+            <view class='price'>2000积分</view>
+          </view>
+          <view class='box fl' bindtap='getDetails'>
+            <view class='box-img'>
+              <image src='/icons/goods4.png'></image>
+            </view>
+            <view class='title elli3'>鲜烹烹 竹荪干货 100g 竹笙菌菇农产品 竹荪菌 古田长裙竹荪食用菌特产古田长裙竹荪食用菌特产古田长裙竹荪食用菌特产</view>
+            <view class='price'>1000积分</view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 今日特价 -->
+    <swiper-item class="swiper-items">
+      <scroll-view scroll-y="true" class='scroll-views'>
+        <view class='tuijian-list clearfix'>
+          <view class='box fl'>
+            <view class='box-img'>
+              <image src='/icons/nf2.png'></image>
+            </view>
+            <view class='title elli3'>大菜园 荔浦芋头 广西新鲜蔬菜 紫藤香芋 毛芋头槟榔芋</view>
+            <text class='price'>￥38.80</text>
+            <text class='gray'>￥38.80</text>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,0 +1,19 @@
+/* pages/totalSum/totalSum.wxss */
+.top{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8% 0%;
+}
+.top view{
+  color: #62ab00;
+  font-size: 24rpx;
+  margin-top: 30rpx;
+}
+.top view.money{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 60rpx;
+}

@@ -1,0 +1,84 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 头部 -->
+  <view class='header'>
+    <view class='left'>
+     <!-- <image src='/icons/point.png' class='point'></image> -->
+     <icon class='iconfont icon-dizhi point'></icon>
+      郑州
+      <icon class='iconfont icon-xia'></icon>
+    </view>
+    <view class='right'>
+      <icon class='iconfont icon-sousuo'></icon>
+      <input placeholder='搜索'></input>
+    </view>
+  </view>
+  <!-- 定位相应图片 -->
+  <view class='position-img'>
+    <image src='/icons/area_adv.png'></image>
+  </view>
+  <!-------------轮播图-----------------  -->
+  <view class='swiper'>
+    <swiper indicator-dots="true"  autoplay="true" duration="1000" interval='3000' indicator-active-color="#62ab00" bindchange="bindchange" circular="true" style="height:{{imgheights[current]}}rpx;">
+      <block wx:for='{{imgUrls}}' wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" data-id='{{index}}' class="slide-image" mode="widthFix" bindload="imageLoad" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 一级分类 -->
+  <scroll-view class="image-group" scroll-x="true">
+    <view class='sorts-list' bindtap='bindAgricultural'>
+      <image src='/icons/sort1.png'></image>
+      <text>农副产品</text>
+    </view>
+    <view class='sorts-list' bindtap='bindIndustry'>
+      <image src='/icons/sort2.png'></image>
+      <text>工业产品</text>
+    </view>
+    <view class='sorts-list' bindtap='bindService'>
+      <image src='/icons/sort3.png'></image>
+      <text>服务产品</text>
+    </view>
+    <view class='sorts-list' bindtap='bindActivity'>
+      <image src='/icons/sort4.png'></image>
+      <text>活动区域</text>
+    </view>
+  </scroll-view>
+  <!-- 为你推荐 -->
+  <view class='tuijian'>
+    <image src='/icons/tj_title.png'></image>
+  </view>
+  <view class='tuijian-list clearfix'>
+    <view class='box fl' bindtap='getDetails'>
+      <view class='box-img'>
+        <image src='/icons/goods4.png'></image>
+      </view>
+      <view class='title elli3'>大菜园 荔浦芋头 广西新鲜蔬菜 紫藤香芋 毛芋头槟榔芋</view>
+      <view class='price'>￥38.80</view>
+    </view>
+    <view class='box fl' bindtap='getDetails'>
+      <view class='box-img'>
+        <image src='/icons/goods2.png'></image>
+      </view>
+      <view class='title elli3'>鲜烹烹 竹荪干货 100g 竹笙菌菇农产品 竹荪菌 古田长裙竹荪食用菌特产古田长裙竹荪食用菌特产古田长裙竹荪食用菌特产</view>
+      <view class='price'>￥38.80</view>
+    </view>
+    <view class='box fl' bindtap='getDetails'>
+      <view class='box-img'>
+        <image src='/icons/goods4.png'></image>
+      </view>
+      <view class='title elli3'>大菜园 荔浦芋头 广西新鲜蔬菜 紫藤香芋 毛芋头槟榔芋</view>
+      <view class='price'>￥38.80</view>
+    </view>
+    <view class='box fl' bindtap='getDetails'>
+      <view class='box-img'>
+        <image src='/icons/goods2.png'></image>
+      </view>
+      <view class='title elli3'>鲜烹烹 竹荪干货 100g 竹笙菌菇农产品 竹荪菌 古田长裙竹荪食用菌特产古田长裙竹荪食用菌特产古田长裙竹荪食用菌特产</view>
+      <view class='price'>￥38.80</view>
+    </view>
+    
+  </view>
+</view>

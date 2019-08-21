@@ -1,0 +1,17 @@
+<!--pages/withdrawalList/withdrawalList.wxml-->
+<view class="container">
+  <view class='detailed-list'>
+    <view class='left'>
+      <text>提现到微信</text>
+      <text class='date'>2019-06-09 12:01:02</text>
+    </view>
+    <view class='green'>-50</view>
+  </view> 
+  <view class='detailed-list'>
+    <view class='left'>
+      <text>提现到微信</text>
+      <text class='date'>2019-06-09 12:01:02</text>
+    </view>
+    <view class='green'>-50</view>
+  </view> 
+</view>

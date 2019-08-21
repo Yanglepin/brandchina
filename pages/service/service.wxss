@@ -1,0 +1,7 @@
+/* pages/service/service.wxss */
+swiper-item{
+  background-color: #fafafa;
+}
+.swiper-tab-list {
+  width: 20%;
+}

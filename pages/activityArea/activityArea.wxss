@@ -1,0 +1,15 @@
+/* pages/activityArea/activityArea.wxss */
+.swiper-tab-list {
+  width: 33.3%;
+}
+swiper-item{
+  background-color: #fafafa;
+}
+.gray{
+  font-size: 24rpx;
+  color: #b6b6b6;
+  text-decoration: line-through;
+}
+.tuijian-list .box .title-js{
+  height: 50rpx;
+}

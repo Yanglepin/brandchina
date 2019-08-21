@@ -1,0 +1,31 @@
+<!--pages/shareIntegral/shareIntegral.wxml-->
+<view class="container">
+  <view class='share-bg'>
+    <image src='/icons/share.png'></image>
+  </view>
+  <view class='share-bom'>
+    <view class='point-list'>
+      <view class='list-box'>
+        <text>0</text>
+        <text class='green'>现积分</text>
+      </view>
+      <view class='list-box'>
+        <text>0</text>
+        <text class='green'>今日积分</text>
+      </view>
+      <view class='list-box'>
+        <text>0</text>
+        <text class='green'>已兑积分</text>
+      </view>
+    </view>
+    <view class='rules-title green'>邀请规则</view>
+    <view class='rules-content'>
+      <view>1.所有会员都可以分享小程序转发到微信邀请好友注册。</view> 
+      <view>1.所有会员都可以分享小程序转发到微信邀请好友注册。</view>
+      <view>1.所有会员都可以分享小程序转发到微信邀请好友注册。</view>
+      <view>1.所有会员都可以分享小程序转发到微信邀请好友注册。</view>
+    </view>
+    <button type='button' class='share' open-type="share">分享获积分</button>
+    <button type='button' class='exchange' bindtap='getActivity'>积分兑商品</button>
+  </view>
+</view>

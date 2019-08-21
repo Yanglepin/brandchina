@@ -1,0 +1,19 @@
+<!--pages/money/money.wxml-->
+<view class="container">
+  <view class='header'>
+    <text class='title'>佣金</text>
+    <text class="icon-right green" bindtap='getWithdrawal'>提现</text>
+  </view>
+  <view class='top' style='background: url(/icons/money_bg.png) no-repeat center;background-size:100%;'>
+    <view>我的佣金</view>
+    <view class='money'>100</view>
+  </view>
+  <view class='detailed'>佣金明细</view>
+  <view class='detailed-list'>
+    <view class='left'>
+      <text>直推购买商品奖励</text>
+      <text class='date'>2019-06-09 12:01:02</text>
+    </view>
+    <view class='green'>+1</view>
+  </view>
+</view>

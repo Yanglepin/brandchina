@@ -1,0 +1,9 @@
+<!--pages/notice/notice.wxml-->
+<view class="container">
+  <view class='notice-list' bindtap='getDetails'>
+    <view class='title elli'>
+      公告：为回馈广大消费者，现公司决定推出以下优惠，望现公司决定推出以下优惠，望...
+    </view>
+    <view class='date'>2019-01-02 10:20:30</view>
+  </view>
+</view>

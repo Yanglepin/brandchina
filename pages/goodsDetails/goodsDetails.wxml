@@ -1,0 +1,34 @@
+<!--pages/goodsDetails/goodsDetails.wxml-->
+<view class="container">
+  <view class='details-img'>
+    <image src='/icons/goodsDetails.png'></image>
+  </view>
+  <view class='goodsDetails'>
+    <view class='title'>靖江特产鱼干500g食用晒干生鲜淡水鱼咸鱼干货农副产品</view>
+    <view class='price red'>￥200.00</view>
+  </view>
+  <view class='parameter' bindtap='show'>
+    <text>商品参数</text>
+    <icon class='iconfont icon-youjiantou'></icon>
+  </view>
+  <!-- <view class="Unit" hidden="{{flag}}">
+    123
+    <view class="x" bindtap='hide'>X</view>
+  </view> -->
+  <view class='store'>
+    <view class='store-name' style='background:url(/icons/yszb.png) no-repeat left; background-size:30%;'>云上郑保旗舰店</view>
+    <view class='store-btn'>进店逛逛</view>
+  </view>
+  <view class='details-con'>
+    <view class='title'>商品详情</view>
+    <image src='/icons/goodsDetails.png'></image>
+  </view>
+  <view style='height: 100rpx;'></view>
+  <view class='footer-two'>
+    <view class='left'>
+    <image src='/icons/gw_icon.png'></image>
+    加入购物车
+    </view>
+    <view class='right' bindtap='bindOrder'>立即购买</view>
+  </view>
+</view>

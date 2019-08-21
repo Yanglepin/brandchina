@@ -1,0 +1,18 @@
+/* pages/withdrawalList/withdrawalList.wxss */
+page{
+  background-color: #f4f4f4;
+}
+.detailed-list .left{
+  font-size: 28rpx;
+}
+.detailed-list .green{
+  font-size: 30rpx;
+}
+.detailed-list{
+  padding: 2% 3%;
+  border-bottom: 1rpx solid #f4f4f4;
+  box-sizing: border-box;
+}
+.detailed-list:first-child{
+  border-top: 5rpx solid #f4f4f4;
+}
